@@ -26,8 +26,6 @@ public abstract class TestCase {
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-infobars");
-//        options.add_experimental_option("excludeSwitches",["enable-automation"]);
-//        options.add_experimental_option("useAutomationExtension", False);
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         options.setExperimentalOption("useAutomationExtension", false);
         options.setAcceptInsecureCerts(true);
